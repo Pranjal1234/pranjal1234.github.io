@@ -34,8 +34,10 @@ a {
 }
 
 .front {
-	background-image:url(me.nef);
+	background-image:url("me.jpg");
 	height:100vh;
+	background-repeat:no-repeat;
+    background-size: cover;
 }
 
 
