@@ -27,8 +27,12 @@ a {
 }
 
 .links {
-	font-size: 4em;
+	font-size:4.5em;
 	padding:20px 20px;
+}
+
+.link {
+	font-size:3em;
 }
 
 .row {
@@ -56,7 +60,7 @@ a {
     background-size: cover;
 }
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 770px) {
 	.front{
 		background-image:url("small_me.jpeg");
 	}
