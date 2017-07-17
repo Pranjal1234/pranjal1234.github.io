@@ -10,33 +10,37 @@ header, nav {
 	width:100%;
 	border-bottom-style: solid;
 	border-bottom-width: : 10px;
+	color:black;
 }
 
 a {
 	color:black;
 }
 
-/*
-*Adjust this media for the iPhone
-*/
-/*@media screen and (max-width: 870px) {
-	.left_side_head {
-		padding-top: 2.5%;
-	}
-	.name {
-		font-size:250%;
-	}
-}*/
-
 
 .name {
-	font-size:400%;
+	font-size: 8em;
+}
+
+.description {
+	font-size: 3em;
+}
+
+.links {
+	font-size: 4em;
+	padding:10px 10px;
 }
 
 .row {
-	vertical-align: middle;
+	;
 }
+.vertical-center {
+  min-height: 40%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 40vh; /* These two lines are counted as one :-)       */
 
+  display: flex;
+  align-items: center;
+ }
 .front {
 	background-image:url("me.jpg");
 	height:100vh;
@@ -48,13 +52,20 @@ a {
 	.front{
 		background-image:url("small_me.jpeg");
 	}
+	.name{
+		font-size:5em;
+	}
+	.description{
+		font-size:1.75em;
+	}
+	
 	
 }
 
 .head_banner {
 	text-align: center;
-	padding-right:10%; 
-	
+	padding-left: 10%;
+    padding-right: 10%;
 }
 
 
