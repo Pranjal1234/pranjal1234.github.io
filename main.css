@@ -28,7 +28,7 @@ a {
 
 .links {
 	font-size: 4em;
-	padding:10px 10px;
+	padding:20px 20px;
 }
 
 .row {
@@ -41,6 +41,14 @@ a {
   display: flex;
   align-items: center;
  }
+
+.arrow {
+  min-height: 20%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 20vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
 .front {
 	background-image:url("me.jpg");
 	height:100vh;
