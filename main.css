@@ -10,7 +10,6 @@ header, nav {
 	width:100%;
 	border-bottom-style: solid;
 	border-bottom-width: : 10px;
-	border-bottom-color: black;
 }
 
 a {
@@ -29,8 +28,13 @@ a {
 	}
 }*/
 
+
 .name {
 	font-size:400%;
+}
+
+.row {
+	vertical-align: middle;
 }
 
 .front {
@@ -40,16 +44,17 @@ a {
     background-size: cover;
 }
 
-
-.right_side_head {
-	text-align: right;
-	padding-right:10%; 
+@media screen and (max-width: 1170px) {
+	.front{
+		background-image:url("small_me.jpeg");
+	}
 	
 }
 
-.left_side_head{
+.head_banner {
+	text-align: center;
+	padding-right:10%; 
 	
-
 }
 
 
