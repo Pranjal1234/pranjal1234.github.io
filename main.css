@@ -53,6 +53,7 @@ a {
   display: flex;
   align-items: center;
 }
+
 .front {
 	background-image:url("me.jpg");
 	height:100vh;
@@ -60,7 +61,7 @@ a {
     background-size: cover;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 920px) {
 	.front{
 		background-image:url("small_me.jpeg");
 	}
@@ -72,6 +73,13 @@ a {
 	}
 	
 	
+}
+
+.noBackground {
+	position: fixed;
+	top:0px;
+	left:0px;
+	color:red;
 }
 
 .head_banner {

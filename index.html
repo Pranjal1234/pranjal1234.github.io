@@ -12,12 +12,15 @@
 	<script src="https://use.fontawesome.com/cdc49cdcaa.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="javascript/smoothscroll.js"></script>
+	<script>
+		
+	</script>
 
 </head>
 
 
 <body>
-	<header class = "container-fluid front">
+	<header id="first" class = "container-fluid front">
 		<div class = "row vertical-center">
 			<div class = "head_banner center-block">
 				<h1 class = "name">Hi, I'm Pranjal!</h1>
@@ -37,23 +40,29 @@
 		</div>
 	</header>
 
-	<nav>
+	<!-- <nav class="noBackground">
 		<ul class="nav nav-pills nav-justified">
-	 		<li role="presentation" ><a class="smoothScroll" href="#about_me"><h4>Me</h4></a></li>
-	  		<li role="presentation" ><a class="smoothScroll" href="#projects"><h4>Projects</h4></a></li>
-	  		<li role="presentation" ><a class="smoothScroll" href="#contact"><h4>Contact</h4></a></li>
+	 		<li><a class="smoothScroll" href="#about_me"><h4>Me</h4></a></li>
+	  		<li><a class="smoothScroll" href="#projects"><h4>Projects</h4></a><l>
+	  		<li><a class="smoothScroll" href="#contact"><h4>Contact</h4></a></li>
 		</ul>
-	</nav>
+	</nav> -->
 	
 	
 	<main>
 		<section class ="container-fluid ">
 			<section id="about_me" class="row aboutme">
-				<div class ="col-xs-6 col-md-5">
+				<div>
+					<a class="smoothScroll link" href="#first"><i class="fa fa-caret-square-o-up " aria-hidden="true"></i></a>
+				</div>
+				<div class ="picOfMe">
 					<img class="img-responsive center-block img-circle photome" src="https://photos.smugmug.com/photos/i-KR2xwWf/0/1b2dab64/X2/i-KR2xwWf-X2.jpg">
 				</div>
-				<div class = "col-xs-6 col-md-6">
+				<div class = "shortBio">
 					<p><h4> Hey, I'm Pranjal, a biomedical engineer based in Atlanta. Currently, learning Full Stack Web Development to pursue a career which helps health care providers to better manage patient care through health information technology.  </h4></p>
+				</div>
+				<div>
+					<a class="smoothScroll link" href="#projects"><i class="fa fa-caret-square-o-down " aria-hidden="true"></i></a>
 				</div> 
 				
 			</section>
