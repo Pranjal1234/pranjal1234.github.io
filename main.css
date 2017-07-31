@@ -5,21 +5,36 @@
  * Header
  *
  */
-header, nav { 
+html,body,section
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav { 
 	box-sizing: border-box;
 	width:100%;
 	border-bottom-style: solid;
 	border-bottom-width: : 10px;
 	color:black;
 }
-
+div{
+	display: inline-block;
+}
 a {
 	color:black;
+	padding: 5% 5%;
 }
 
 
 .name {
 	font-size: 8em;
+}
+
+.center-block {
+	text-align: center;
 }
 
 .description {
@@ -28,7 +43,6 @@ a {
 
 .links {
 	font-size:4.5em;
-	padding:20px 20px;
 }
 
 .link {
@@ -47,9 +61,6 @@ a {
  }
 
 .arrow {
-  min-height: 20%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 20vh; /* These two lines are counted as one :-)       */
-
   display: flex;
   align-items: center;
 }
@@ -75,12 +86,11 @@ a {
 	
 }
 
-.noBackground {
-	position: fixed;
-	top:0px;
-	left:0px;
-	color:red;
+.boxlinks {
+	min-width: 20%;
+	text-align:center;
 }
+
 
 .head_banner {
 	text-align: center;
@@ -88,8 +98,18 @@ a {
     padding-right: 10%;
 }
 
+.photoOfMe {
+	max-width:40%;
+}
 
+.shortBio {
+	max-width:40%;
+}
 
+.arrowUpDown {
+	text-align:center;
+
+}
 /*
  *
  * Common
@@ -128,8 +148,7 @@ a {
 
  .photome {
  	padding-top: 5%;
- 	max-height: 40%;
- 	max-width: 40%;
+ 	padding-bottom:5%;
  	border-image: solid 10px;
  	text-align:left;
  }
@@ -145,7 +164,11 @@ a {
  * Projects
  *
  */
-
+* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}
  /*
  *
  * Contact

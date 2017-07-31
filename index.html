@@ -20,15 +20,15 @@
 
 
 <body>
-	<header id="first" class = "container-fluid front">
+	<section id="first" class = "container-fluid front">
 		<div class = "row vertical-center">
 			<div class = "head_banner center-block">
-				<h1 class = "name">Hi, I'm Pranjal!</h1>
+				<header><h1 class = "name">Hi, I'm Pranjal!</h1></header>
 				<h4 class= "description">I am a Biomedical Engineer, who is exploring the web development world!</h4>
 			</div>	
 		</div>
 		<div class = "row vertical-center">
-			<div class = "center-block">
+			<div class = "boxlinks center-block">
 				<a class="links" href="https://www.linkedin.com/in/pranjalpatelpp/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 				<a class="links" href="https://github.com/Pranjal1234" ><i class="fa fa-github" aria-hidden="true"></i></a>
 			</div>	
@@ -38,7 +38,7 @@
 				<a class="smoothScroll link" href="#about_me"><i class="fa fa-caret-square-o-down " aria-hidden="true"></i></a>
 			</div>	
 		</div>
-	</header>
+	</section>
 
 	<!-- <nav class="noBackground">
 		<ul class="nav nav-pills nav-justified">
@@ -50,21 +50,27 @@
 	
 	
 	<main>
-		<section class ="container-fluid ">
-			<section id="about_me" class="row aboutme">
-				<div>
-					<a class="smoothScroll link" href="#first"><i class="fa fa-caret-square-o-up " aria-hidden="true"></i></a>
+		<section>
+			<section id="about_me" class="container-fluid aboutme">
+				<div class="row arrow">
+					<div class="center-block">
+						<a class="smoothScroll link col" href="#first"><i class="fa fa-caret-square-o-up " aria-hidden="true"></i></a>
+					</div>
 				</div>
-				<div class ="picOfMe">
-					<img class="img-responsive center-block img-circle photome" src="https://photos.smugmug.com/photos/i-KR2xwWf/0/1b2dab64/X2/i-KR2xwWf-X2.jpg">
+				<header class="head_banner center-block"><h3> Short Bio</h3> </header>
+				<div class="row">
+					<div class="photoOfMe col">
+						<img class="img-responsive center-block img-circle photome" src="https://photos.smugmug.com/photos/i-KR2xwWf/0/1b2dab64/X2/i-KR2xwWf-X2.jpg">
+					</div>
+					<div class="col shortBio">
+						<p><h4> Hey, I'm Pranjal, a biomedical engineer based in Atlanta. Currently, learning Full Stack Web Development to pursue a career which helps health care providers to better manage patient care through health information technology.</h4></p>
+					</div>
 				</div>
-				<div class = "shortBio">
-					<p><h4> Hey, I'm Pranjal, a biomedical engineer based in Atlanta. Currently, learning Full Stack Web Development to pursue a career which helps health care providers to better manage patient care through health information technology.  </h4></p>
-				</div>
-				<div>
-					<a class="smoothScroll link" href="#projects"><i class="fa fa-caret-square-o-down " aria-hidden="true"></i></a>
+				<div class="row arrow">
+					<div class="center-block">
+						<a class="smoothScroll link" href="#projects"><i class="fa fa-caret-square-o-down " aria-hidden="true"></i></a>
+					</div>	
 				</div> 
-				
 			</section>
 			<section id="projects" class = "row aboutme"> 
 				
