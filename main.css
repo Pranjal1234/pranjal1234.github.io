@@ -94,10 +94,11 @@ a {
 	text-align:center;
 }
 .bioback {
-	background-image:url("bio_back.jpg");
+	background-image:url("bio_back.jpg"); 
+	background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center; 
 	height:100vh;
-	background-repeat:no-repeat;
-    background-size: cover;
     color:white;
 }
 
@@ -125,7 +126,7 @@ a {
 
 	.shortBio {
 		left: 20vw;
-    	top: -15vh;
+    	top: -10vh;
 	}
 
 }
@@ -200,6 +201,31 @@ a {
  * Projects
  *
  */
+@media screen and (max-width:710px){
+
+	.photoOfMe {
+		left:0vh;
+		top:0vh;
+		display: block;
+    	margin-right: auto;
+    	margin-left: auto;
+	}
+	.photome {
+		width:30vh;
+	}
+	.shortBio {
+		left:0px;
+		top:0px;
+		display: block;
+    	margin-right: auto;
+    	margin-left: auto;
+    	width:100%;
+    	font-weight: 20px;
+	}
+	#bio {
+    	font-size: 20px;
+    }
+}
 /*
 * {
   background: #000 !important;
