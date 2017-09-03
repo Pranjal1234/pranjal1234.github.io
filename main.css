@@ -11,6 +11,7 @@ html,body,section
     height: 100%;
     margin: 0px;
     padding: 0px;
+    color:black;
 }
 
 nav { 
@@ -31,24 +32,33 @@ a {
 	color:white;
 }
 
-
-.name {
+.center {
+	text-align: center;
+	width:100vw;
+}
+.title {
+	margin-top:10%;
 	font-size: 8em;
 }
-
-
-.description {
+.subtitle {
 	font-size: 3em;
 }
 
 .links {
 	font-size:4.5em;
+	
+}
+.right-link {
+	text-align:left;
 }
 
-.link {
-	font-size:3em;
+.left-link {
+	text-align:right;
 }
 
+.top-buffer {
+	margin-top:5%;
+}
 .row {
 	;
 }
@@ -61,8 +71,6 @@ a {
  }
 
 .arrow {
-  display: flex;
-  align-items: center;
   height:10vh;
   position: relative;
   top:1vh;
@@ -75,18 +83,6 @@ a {
 	background-repeat:no-repeat;
     background-size: cover;
 }
-
-@media screen and (max-width: 920px) {
-	.front{
-		background-image:url("small_me.jpeg");
-	}
-	.name{
-		font-size:3.5em;
-	}
-	.description{
-		font-size:1.75em;
-	}
-}	
 
 
 .boxlinks {
@@ -165,23 +161,7 @@ a {
 
  /*
  *
- * Main
- *
- */
-
- /*
- *
- * Content
- *
- */
- main {
- 	background-color:yellow;
- }
- /*
- *
- * About Me
- *
- */
+ 
 
  .photome {
  	padding-top: 5%;
@@ -196,11 +176,82 @@ a {
 	border-bottom-width: : 10px;
 	border-bottom-color: black;
  }
- /*
- *
- * Projects
- *
- */
+ /* Laptop L Screen 4K Screen*/
+ @media screen and (min-width: 2559px) and (min-height: 1752px)  {
+	.title{
+		font-size:15em;
+	}
+	.subtitle{
+		font-size:8em;
+	}
+	.top-buffer {
+		margin-top:8%;
+	}
+	.links {
+		font-size:8em;
+	}
+} 
+ /*iPads*/
+@media screen and (max-width: 1025px) and (max-height: 1400px) and (min-width: 767px) and (min-height: 1023px){
+	.front{
+		background-image:url("small_me.jpeg");
+	}
+	.title{
+		font-size:4.5em;
+	}
+	.subtitle{
+		font-size:3.0em;
+	}
+	
+	.top-buffer {
+		margin-top:20%;
+	}
+	.links {
+		font-size:5.0em;
+	}
+}  
+/*Tablets*/
+@media screen and (max-width: 1190px) {
+	.title{
+		font-size:4.0em;
+	}
+	.subtitle{
+		font-size:2.5em;
+	}
+	
+	.top-buffer {
+		margin-top:10%;
+	}
+	.links {
+		font-size:3.0em;
+	}
+} 
+ /* Mobile S Screen Mobile M Screen Mobile L Mobile Phones*/
+@media screen and (max-width: 425px) and (max-height: 737px)  {
+	.front{
+		background-image:url("small_me.jpeg");
+	}
+	.title{
+		font-size:3.5em;
+	}
+	.subtitle{
+		font-size:1.75em;
+	}
+	.top-buffer {
+		margin-top:25%;
+	}
+	.links {
+		font-size:3.0em;
+	}
+}
+
+
+
+@media screen  and (max-width:1025px) and (max-height:1377px) and (min-height:1000px) {
+	.top-buffer{
+		margin-top:35%;
+	}
+}
 @media screen and (max-width:710px){
 
 	.photoOfMe {
@@ -226,8 +277,8 @@ a {
     	font-size: 20px;
     }
 }
-/*
-* {
+
+{
   background: #000 !important;
   color: #0f0 !important;
   outline: solid #f00 1px !important;
