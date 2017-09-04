@@ -6,16 +6,16 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="main.css">
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/cdc49cdcaa.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="javascript/smoothscroll.js"></script>
 	<script>
-		
+	
 	</script>
-
+	<link rel="stylesheet" href="main.css">
 </head>
 
 
@@ -27,65 +27,75 @@
 			</div>
 			<br><br>
 			<div class = "col-sm-12 subtitle">
-				I am a full-stack web developer, ready for the next challenge!
+				I am an aspiring full-stack web developer, who is ready for the next challenge!
 			</div>
 		</div>
 		
-		<div class = "row links center top-buffer">
+		<div class = "row center top-buffer">
 			<div class = "col-sm-6 left-link">
-				<a href="https://www.linkedin.com/in/pranjalpatelpp/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+				<a class="links" href="https://www.linkedin.com/in/pranjalpatelpp/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 			</div>
 			<div class = "col-sm-6 right-link">
-				<a href="https://github.com/Pranjal1234" ><i class="fa fa-github" aria-hidden="true"></i></a>
+				<a class="links" href="https://github.com/Pranjal1234" ><i class="fa fa-github" aria-hidden="true"></i></a>
 			</div>	
 		</div>
 		
-		<div class = "row arrow center top-buffer">
+		<div class = "row arrow-down center">
 			<div class = "col-sm-12">
-				<a class="smoothScroll links" href="#about_me"><i class="fa fa-caret-square-o-down " aria-hidden="true"></i></a>
+				<a class="smoothScroll links" href="#about_me"><i class="fa fa-caret-square-o-down w" aria-hidden="true"></i></a>
 			</div>	
 		</div>
 	</section>
-
-	<!-- <nav class="noBackground">
-		<ul class="nav nav-pills nav-justified">
-	 		<li><a class="smoothScroll" href="#about_me"><h4>Me</h4></a></li>
-	  		<li><a class="smoothScroll" href="#projects"><h4>Projects</h4></a><l>
-	  		<li><a class="smoothScroll" href="#contact"><h4>Contact</h4></a></li>
-		</ul>
-	</nav> -->
-	
-	
 	<main>
-		<section>
-			<section id="about_me" class="container-fluid aboutme bioback">
-				<div class="row arrow">
-					<div class="center-block">
-						<a class="smoothScroll link w" href="#first"><i class="fa fa-caret-square-o-up " aria-hidden="true"></i></a>
+		<div id="about_me" class="container-fluid bioback ">
+			<div class="row arrow-up center">
+				<div class="col-sm-12">
+					<a class="smoothScroll links w" href="#first"><i class="fa fa-caret-square-o-up w" aria-hidden="true"></i></a>
+				</div>
+			</div>
+			<div class="row center title-buffer">
+				<div class="col-sm-12 subtitle">
+					<strong>About Me</strong>
+				</div>
+			</div>
+			<div class="row center top-buffer">
+				<div class="col-sm-6">
+					<img class="img-responsive img-circle photome" src="https://goo.gl/b8rM14">
+				</div>
+				<div class="col-sm-6">
+					<div class="bio">
+						I am an engineer at heart who loves to tackle difficult problems with a simple and logical approach. I graduated from Georgia Tech with a BS in Biomedical Engineering in Decemeber 2016. Since than I have enrolled in an Udacity Nanodegree Program which focuses on Full-Stack Web Development. I have worked on several projects throught my early career ranging from topics such as medical devices and database management. Currently, I live Atlanta, Georgia.
 					</div>
 				</div>
-				<header class="head_banner center-block"><h2><strong>ABOUT ME</strong></h2></header>
-				<div class="row bio">
-					<div class="photoOfMe col-md-4">
-						<img class="img-responsive center-block img-circle photome" src="https://goo.gl/b8rM14">
-					</div>
-					<div class="col-md-4 shortBio">
-						<p><h3 id='bio'>THIS NEEDS WORK Hey, I'm Pranjal, a biomedical engineer based in Atlanta. Currently, learning Full Stack Web Development to pursue a career which helps health care providers to better manage patient care through health information technology. THIS NEEDS WORK</h3></p>
-					</div>
+			</div>
+			<div class="row arrow-down center">
+				<div class="col-sm-12">
+					<a class="smoothScroll links " href="#projects"><i class="fa fa-caret-square-o-down w" aria-hidden="true"></i></a>
+				</div>	
+			</div> 
+		</div>
+		<div id="projects" class = "container-fluid projectback"> 
+			<div class="row arrow-up center">
+				<div class="col-sm-12">
+					<a class="smoothScroll links" href="#about_me"><i class="fa fa-caret-square-o-up" aria-hidden="true"></i></a>
 				</div>
-				<div class="row arrow">
-					<div class="center-block">
-						<a class="smoothScroll link w" href="#projects"><i class="fa fa-caret-square-o-down " aria-hidden="true"></i></a>
-					</div>	
-				</div> 
-			</section>
-			<section id="projects" class = "container-fluid aboutme"> 
-				
-			</section>
-			<section id="contact" class = "container-fluid aboutme"> 
-				Contact 
-			</section>
+			</div>
+			<div class="row center">
+				<div class="col-sm-12 subtitle title-buffer">
+					<strong>Projects</strong>
+				</div>
+
+			</div>
+			<div class="row arrow-down center">
+				<div class="col-sm-12">
+					<a class="smoothScroll links" href="#contact"><i class="fa fa-caret-square-o-down" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</div>
+		<section id="contact" class = "container-fluid aboutme"> 
+			Contact 
 		</section>
+		
 		<footer></footer>
 	</main>
 </body>
