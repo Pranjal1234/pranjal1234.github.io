@@ -57,19 +57,12 @@ div{
 .top-buffer {
     margin-top:2%;
 }
+
 .title-buffer{
     margin-top:10%;
 }
 
-.arrow-up {
-    position: absolute;
-    top:3%;
-}
 .arrow-down {
-    position: absolute;
-    bottom:3%;
-}
-.arrow-down-front {
     position: absolute;
     bottom:5%;
 }
@@ -146,7 +139,7 @@ div{
         font-size:4em;
     }
     .title-buffer {
-        margin-top: 10%;
+        margin-top: 5%;
     }
     .img-responsive {
         display:inline-block;
@@ -170,7 +163,7 @@ div{
     }
 
     .title-buffer {
-        margin-top:20%;
+        margin-top:10%;
     }
 
     .links {
@@ -221,7 +214,7 @@ div{
         font-size:1.25em;
     }
     .title-buffer{
-        margin-top:10%;
+        margin-top:5%;
     }
     .img-responsive {
         display:inline-block;
@@ -243,7 +236,7 @@ div{
         margin-top:3%;
     }
     .title-buffer {
-        margin-top:12%;
+        margin-top:6%;
     }
     .links {
         font-size:3.0em;
@@ -272,7 +265,7 @@ div{
         margin-top:8%;
     }
     .title-buffer {
-        margin-top:20%;
+        margin-top:10%;
     }
     .links {
         font-size:3.0em;
