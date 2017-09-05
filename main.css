@@ -67,11 +67,11 @@ div{
 }
 .arrow-down {
     position: absolute;
-    top:90%;
+    bottom:3%;
 }
 .arrow-down-front {
     position: absolute;
-    top:85%;
+    bottom:5%;
 }
 
 
