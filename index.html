@@ -12,85 +12,129 @@
     <script src="https://use.fontawesome.com/cdc49cdcaa.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="javascript/smoothscroll.js"></script>
-    <script>
-    
-    </script>
     <link rel="stylesheet" href="main.css">
 </head>
 
 
 <body>
-    <section id="first" class = "container-fluid front">
-        <div class = "row arrow-down center">
+    <section id="frontpage" class = "container-fluid">
+        <div id="title" class = "row">
+            <div class="col-sm-12">
+                <div class="alignindiv">
+                    <strong>Hi, I'm Pranjal!</strong>
+                    Aspiring full-stack developer, who is ready for the next challenge!    
+                </div>
+            </div>
+        </div>
+        <div id="profiles" class="row">
+            <div id="linkedin" class="col-sm-6">
+                <a class="links" href="https://www.linkedin.com/in/pranjalpatelpp/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+            <div id="github" class = "col-sm-6">
+                <a class="links" href="https://github.com/Pranjal1234" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>  
+        </div>
+        <div id="arrowdown" class = "row">
             <div class = "col-sm-12">
-                <a class="smoothScroll links" href="#about_me"><i class="fa fa-caret-square-o-down w" aria-hidden="true"></i></a>
+                <a href="#aboutpage"><i class="fa fa-caret-square-o-down w" aria-hidden="true"></i></a>
             </div>  
         </div>
-        <div class = "row center">
-            <div class = "col-sm-12 title">
-                <strong>Hi, I'm Pranjal!</strong>
-            </div>
-            <br><br>
-            <div class = "col-sm-12 subtitle">
-                I am an aspiring full-stack web developer, who is ready for the next challenge!
-            </div>
-        </div>
-        
-        <div class = "row center top-buffer">
-            <div class = "col-sm-6 left-link">
-                <a class="links" href="https://www.linkedin.com/in/pranjalpatelpp/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-            </div>
-            <div class = "col-sm-6 right-link">
-                <a class="links" href="https://github.com/Pranjal1234" ><i class="fa fa-github" aria-hidden="true"></i></a>
-            </div>  
-        </div>
-        
-        
     </section>
-    <main>
-        <div id="about_me" class="container-fluid bioback ">
+    <section id="aboutpage" class="container-fluid bioback ">
+        <div class="row title">
+            <div class="col-sm-12">
+                <strong>About Me</strong>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="alignindiv">
+                    <img id="photome" class="img-responsive img-circle" src="https://goo.gl/b8rM14">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div id="bio" class="alignindiv">
+                    An engineer at heart who loves to tackle difficult problems with a simple and logical approach. I graduated from Georgia Tech with a BS in Biomedical Engineering in Decemeber 2016. Since than I have enrolled in an Udacity Nanodegree Program which focuses on Full-Stack Web Development. I have worked on several projects ranging from topics such as medical devices and database management.
+                </div>
+            </div>
+        </div> 
+        <div id="arrowdown" class="row">
+            <div class="col-sm-12">
+                <a href="#projectspage"><i class="fa fa-caret-square-o-down w" aria-hidden="true"></i></a>
+            </div>  
+        </div>
+    </section>
+    <section id="projectspage" class = "container-fluid projectback"> 
+        <div class="row title">
+            <div class="col-sm-12">
+                    <strong>Projects</strong>
+            </div>
+        </div>
+        <div id="projects" class="row">
+            <div class="col-sm-4 projects">
+                <div class="project-title alignindiv">
+                    <strong>Personal ownCloud</strong>
+                </div>
+                <div>
+                    <a href="http://76.97.97.15/owncloud/" target="_blank">
+                    <img class="img-responsive" src="owncloud.png"></a>
+                </div>
 
-            <div class="row arrow-down center">
-                <div class="col-sm-12">
-                    <a class="smoothScroll links " href="#projects"><i class="fa fa-caret-square-o-down w" aria-hidden="true"></i></a>
+                <div class="project-description alignindiv">
+                    <strong>Description:</strong> Cloud-service to store files and photos, similar to Google Drive, Dropbox, etc. Click <a href="http://76.97.97.15/owncloud/" target="_blank">here</a> or image to view the project.<br><br><strong> Log in to get my resume.</strong><br> username: recruiter <br> password: pickme
+                </div>
+                <div class="project-technology-list">
+                    <strong>Technologies Used:</strong> ownCloud, apache2, postgreSQL, HTTP, Linux(Ubuntu 17.04 Server)
+                </div>
+            </div>
+            <div class="col-sm-4 projects">
+                <div class="project-title alignindiv">
+                    <strong>Neighborhood-Map</strong>
+                </div>
+                <div>
+                    <a href="http://76.97.97.15/neighborhood-maps/" target="_blank">
+                    <img class="img-responsive" src="maps.png"></a>
+                </div>
+                <div class="project-description alignindiv">
+                    <strong>Description:</strong> An interactive map of places to live in New York. Each marker gives a list of coffee shops within 100m of the location. You can narrow down the list by searching it on the left side. Click <a href="http://76.97.97.15/neighborhood-maps/" target="_blank"> here</a> or the image to see the web app. <br><br>
+                    <strong>Source Code:</strong>
+                    <a href="https://github.com/Pranjal1234/neighborhood-maps" target="_blank">GitHub</a>
+                </div> 
+                <div class="project-technology-list">
+                    <strong>Technologies Used:</strong> Google Maps API, FourSquare API, JavaScript, Knockout Framework, AJAX, apache2, HTTP, Linux(Ubuntu 17.04 Server)
                 </div>  
             </div>
-            <div class="row center title-buffer">
-                <div class="col-sm-12 subtitle">
-                    <strong>About Me</strong>
+            <div class="col-sm-4 projects">
+                <div class="project-title alignindiv">
+                    <strong>Catalog Web App</strong>
+                </div>
+                <div>
+                    <a href="http://76.97.97.15/catalog/" target="_blank">
+                    <img class="img-responsive" src="catalog.png"></a>
+                </div>
+                <div class="project-description alignindiv">
+                    <strong>Description:</strong> Catalog app that keeps track of items put onto the site. You can make an account and add an item to the Catalog. Click <a href="http://76.97.97.15/catalog/" target="_blank"> here</a> or the image to see the catalog and add your own item. <br><br>
+                    <strong>Source Code:</strong> 
+                    <a href="https://github.com/Pranjal1234/catalog" target="_blank">GitHub</a>
+                </div>
+                <div class="project-technology-list">
+                    <strong>Technologies Used:</strong>  Python, Flask Framework, SQLite, SQLAlchemy, OAuth2.0, apache2, mod_wsgi, HTTP, Linux(Ubuntu 17.04)
                 </div>
             </div>
-            <div class="row center top-buffer">
-                <div class="col-sm-6">
-                    <img class="img-responsive img-circle photome" src="https://goo.gl/b8rM14">
-                </div>
-                <div class="col-sm-6">
-                    <div class="bio">
-                        I am an engineer at heart who loves to tackle difficult problems with a simple and logical approach. I graduated from Georgia Tech with a BS in Biomedical Engineering in Decemeber 2016. Since than I have enrolled in an Udacity Nanodegree Program which focuses on Full-Stack Web Development. I have worked on several projects ranging from topics such as medical devices and database management.
-                    </div>
-                </div>
-            </div> 
         </div>
-        <div id="projects" class = "container-fluid projectback"> 
-            <div class="row arrow-down center">
-                <div class="col-sm-12">
-                    <a class="smoothScroll links" href="#contact"><i class="fa fa-caret-square-o-down" aria-hidden="true"></i></a>
-                </div>
+        <div id="arrowdown" class="row alignindiv">
+            <div class="col-sm-12">
+                <a href="#contactpage"><i class="fa fa-caret-square-o-down" aria-hidden="true"></i></a>
             </div>
-            <div class="row center">
-                <div class="col-sm-12 subtitle title-buffer">
-                    <strong>Projects</strong>
-                </div>
-
+        </div>  
+    </section>
+    <section id="contactpage" class = "container-fluid"> 
+        <div class="row title">
+            <div class="col-sm-12">
+                <strong>Contact</strong>
             </div>
-            
         </div>
-        <section id="contact" class = "container-fluid aboutme"> 
-            Contact 
-        </section>
-        
-        <footer></footer>
-    </main>
+    </section>
 </body>
 
 </html>
