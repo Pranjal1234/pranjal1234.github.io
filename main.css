@@ -8,18 +8,18 @@ section {
 
 #title {
     height:60%;
-    font-size: 7vw;
+    font-size: 5vw;
 }
 
 #profiles {
     height:20%;
-    font-size: 6vw;
+    font-size: 4vw;
     
 }
 
 #arrowdown {
     height:10%;
-    font-size: 6vw;
+    font-size: 4vw;
 
 }
 
@@ -38,7 +38,7 @@ section {
 
 #aboutme {
     height: 75%;
-    font-size: 3vw;
+    font-size: 2vw;
 }
 
 #projects {
@@ -52,15 +52,15 @@ section {
 }
 
 .project-title {
-    font-size: 3.5vw;
-}
-
-.project-description, .project-technology-list {
     font-size: 2.5vw;
 }
 
+.project-description, .project-technology-list {
+    font-size: 1.5vw;
+}
+
 .title {
-    font-size: 5vw;
+    font-size: 3vw;
     padding: 5% 5%;
 }
 
@@ -78,6 +78,43 @@ section {
     }
     .photo {
         height: 65%;
+    }
+    #title {
+        height:60%;
+        font-size: 7vw;
+    }
+
+    #profiles {
+        height:20%;
+        font-size: 6vw;
+        
+    }
+
+    .project-title {
+        font-size: 3.5vw;
+    }
+
+    .project-description, .project-technology-list {
+        font-size: 2.5vw;
+    }
+
+    .title {
+        font-size: 5vw;
+        padding: 5% 5%;
+    }
+
+    #arrowdown {
+        height:10%;
+        font-size: 6vw;
+
+    }
+    #aboutme {
+        height: 75%;
+        font-size: 3vw;
+    }
+
+    #photome {
+        height: 100%;
     }
 }
 
