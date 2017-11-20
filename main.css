@@ -80,15 +80,15 @@ section {
 
     #title {
         height:60%;
-        font-size: 6em;
+        font-size: 3.5vw;
     }
 
     #profiles {
-        font-size: 5em;
+        font-size: 2vw;
     }
 
     #arrowdown {
-        font-size: 5em;
+        font-size: 2vw;
     }
 
 }
