@@ -72,6 +72,27 @@ section {
     color: black;
 }
 
+.aboutmearrow {
+    padding: 3% 3%;
+}
+
+@media screen and (min-width: 1800px) {
+
+    #title {
+        height:60%;
+        font-size: 6em;
+    }
+
+    #profiles {
+        font-size: 5em;
+    }
+
+    #arrowdown {
+        font-size: 5em;
+    }
+
+}
+
 @media screen and (max-width: 767px) {
     #photome {
         height: 250px;
