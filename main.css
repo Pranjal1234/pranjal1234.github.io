@@ -37,7 +37,7 @@ section {
 }
 
 #aboutme {
-    height: 70%;
+    height: 65%;
     font-size: 2vw;
 }
 
@@ -91,6 +91,9 @@ section {
         font-size: 2vw;
     }
 
+     #aboutme {
+        font-size: 1.5vw;
+    }
 }
 
 @media screen and (max-width: 767px) {
