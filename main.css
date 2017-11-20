@@ -5,55 +5,61 @@ section {
 
 #title {
     height:60%;
-    font-size: 3em;
+    font-size: 5vw;
 }
 
 #profiles {
     height:20%;
-    font-size: 3em;
+    font-size: 5vw;
     
 }
 
 #arrowdown {
     height:10%;
-    font-size: 3em;
+    font-size: 5vw;
 
 }
 
-#linkedin {
-    text-align: right;
+
+
+.img-responsive {
+    margin: 0 auto;
 }
 
-#bio {
-    font-size: 1.5em;
-}
-
-#github {
-    text-align: left;
+#aboutme {
+    height: 80%;
+    font-size: 2.5vw;
 }
 
 #projects {
-    height:60%;
+    height:70%;
     overflow: auto;
 }
 
 .projects {
     height: 100%;
-    overflow: auto;
 }
 
 .project-title {
-    font-size: 1.5em;
+    font-size: 2.0vw;
 }
 
-.project-description {
-    font-size: 1.0em;
+.project-description, .project-technology-list {
+    font-size: 1.5vw;
 }
 
 .title {
-    font-size: 3em;
+    font-size: 3.5vw;
 }
 
 .alignindiv {
     padding: 10% 5%;
 }
+
+@media screen and (max-width: 770px) {
+    #photome {
+        height: 250px;
+    }
+}
+
+
