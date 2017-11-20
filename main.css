@@ -1,11 +1,14 @@
 section {
     height:100vh;
     text-align: center;
+    border-bottom-color: black;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
 }
 
 #title {
     height:60%;
-    font-size: 7.5vw;
+    font-size: 7vw;
 }
 
 #profiles {
@@ -34,12 +37,12 @@ section {
 }
 
 #aboutme {
-    height: 80%;
+    height: 75%;
     font-size: 3vw;
 }
 
 #projects {
-    height:70%;
+    height:65%;
     overflow: auto;
 }
 
@@ -58,6 +61,7 @@ section {
 
 .title {
     font-size: 5vw;
+    padding: 5% 5%;
 }
 
 .alignindiv {
