@@ -45,6 +45,7 @@ section {
 
 .projects {
     height: 100%;
+    display: inline-block;
 }
 
 .project-title {
