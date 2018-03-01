@@ -6,21 +6,83 @@ section {
     border-bottom-style: solid;
 }
 
-#title {
-    height:60%;
-    font-size: 5vw;
+a {
+    color:black;
+}
+
+
+#page1title {
+    font-size: 7vh;
+    height:50%;
+}
+
+.alignindiv {
+    padding: 5vh 5vw;
+}
+
+.links {
+    padding: 5vh 5vw;
 }
 
 #profiles {
-    height:20%;
-    font-size: 4vw;
-    
+    height:30%;
+    font-size: 5vh;
+    color:black;  
 }
 
-#arrowdown {
+#page1down {
     height:10%;
-    font-size: 4vw;
+    font-size: 5vh;
+}
 
+/* tablets */
+
+@media screen and (max-height: 1400px) and (min-height: 1020px)and (min-width: 750px) and (max-width: 1030px) {
+
+    #page1title{
+        font-size: 4vh;
+    }
+
+    #profiles{
+        font-size: 3vh;
+    }
+
+    #page1down {
+        font-size: 4vh;
+    }
+
+}
+
+/*phones*/
+
+@media screen and (max-height: 820px) and (min-height: 630px)and (min-width: 350px) and (max-width: 420px) {
+
+    
+
+    #profiles{
+        font-size: 3vh;
+    }
+
+    #page1down {
+        font-size: 4vh;
+    }
+
+}
+
+/* reg screen break */
+
+@media screen and (max-width: 750px) and (min-height: 460px ) {
+
+    #page1title{
+        font-size: 4vh;
+    }
+}
+
+/*
+
+
+#arrowdown {
+   
 }
 
 #photome {
@@ -64,12 +126,18 @@ section {
     padding: 5% 5%;
 }
 
-.alignindiv {
-    padding: 10% 5%;
+
+
+.alignindivlinks {
+    max-height: inherit;
+    height: 100%;
+    padding: 3% 3%;
+    color: black;
 }
 
 .links {
     color: black;
+    padding-top: 20%
 }
 
 .aboutmearrow {
@@ -78,15 +146,13 @@ section {
 
 @media screen and (min-width: 1100px) {
 
-    #title {
-        height:60%;
-        font-size: 3.5vw;
+  #title {
+        font-size: 3.5vh;
     }
 
     #profiles {
         font-size: 2vw;
     }
-
     #arrowdown {
         font-size: 2vw;
     }
@@ -103,9 +169,8 @@ section {
     .photo {
         height: 65%;
     }
-    #title {
-        height:60%;
-        font-size: 7vw;
+     #title {
+        font-size: 3vh;
     }
 
     #profiles {
@@ -139,6 +204,35 @@ section {
 
     #photome {
         height: 100%;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    #github, #linkedin {
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-height: 500px) {
+    #title {
+        font-size: 5vh;
+    }
+
+    #arrowdown {
+        font-size: 4.5vh;
+    }
+}
+
+
+
+@media screen and (max-height: 330px) and (min-width: 460px) {
+
+    #profiles {
+        height: 0%;
+    }
+
+    #arrowdown {
+        visibility: hidden;
     }
 }
 
