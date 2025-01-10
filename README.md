@@ -8,12 +8,14 @@ The project follows a standard Create React App structure:
 
 ```
 ├── public/          # Static files
-├── src/            # Source files
-│   ├── App.js      # Main React component
-│   ├── App.css     # Styles
-│   └── index.js    # Entry point
-├── package.json    # Dependencies and scripts
-└── README.md       # This file
+│   └── index.html   # Main HTML file
+├── src/             # Source files
+│   ├── index.js     # Entry point
+│   ├── index.css    # Global styles
+│   ├── App.js       # Main React component
+│   └── App.css      # Component styles
+├── package.json     # Dependencies and scripts
+└── README.md        # This file
 ```
 
 ## Features
