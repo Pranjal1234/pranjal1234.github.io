@@ -1,37 +1,20 @@
-# Personal Website
+# Pranjal's Portfolio
 
-This is my personal website built using React. The website was created with the assistance of Claude AI and serves as a platform for my online presence.
+A modern portfolio website built with React and Tailwind CSS.
 
-## Project Structure
+## Setup
 
-The project follows a standard Create React App structure:
-
-```
-├── public/          # Static files
-│   └── index.html   # Main HTML file
-├── src/             # Source files
-│   ├── index.js     # Entry point
-│   ├── index.css    # Global styles
-│   ├── App.js       # Main React component
-│   └── App.css      # Component styles
-├── package.json     # Dependencies and scripts
-└── README.md        # This file
+1. Install dependencies:
+```bash
+npm install
 ```
 
-## Features
+2. Start development server:
+```bash
+npm start
+```
 
-- React-based modern web application
-- Responsive design
-- Placeholder section for future content
-- Built with the assistance of Claude AI
-
-## Getting Started
-
-1. Clone the repository
-2. Install dependencies: `npm install`
-3. Start the development server: `npm start`
-4. Build for production: `npm run build`
-
-## Acknowledgments
-
-This website was created with the assistance of Claude AI, demonstrating the potential of AI-human collaboration in web development.
+3. Build for production:
+```bash
+npm run build
+```
