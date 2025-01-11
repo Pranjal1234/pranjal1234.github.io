@@ -3,158 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo List</title>
+    <title>Pranjal's Portfolio created by Claude</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
         }
         .container {
-            background-color: white;
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        header {
+            background-color: #f5f5f5;
+            padding: 2rem 0;
+            text-align: center;
         }
         h1 {
-            text-align: center;
             color: #333;
-        }
-        .input-group {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-        input[type="text"] {
-            flex: 1;
-            padding: 8px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 16px;
-        }
-        button {
-            padding: 8px 16px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            display: flex;
-            align-items: center;
-            padding: 8px;
-            background-color: #f9f9f9;
-            margin-bottom: 8px;
-            border-radius: 4px;
-        }
-        li span {
-            flex: 1;
-        }
-        .delete-btn {
-            background-color: #ff4444;
-            margin-left: 10px;
-        }
-        .delete-btn:hover {
-            background-color: #cc0000;
-        }
-        .completed {
-            text-decoration: line-through;
-            color: #888;
+            margin: 0;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Todo List</h1>
-        <div class="input-group">
-            <input type="text" id="todoInput" placeholder="Add a new task...">
-            <button onclick="addTodo()">Add</button>
+    <header>
+        <div class="container">
+            <h1>Pranjal's Portfolio created by Claude</h1>
         </div>
-        <ul id="todoList"></ul>
-    </div>
-
-    <script>
-        let todos = [];
-
-        function addTodo() {
-            const input = document.getElementById('todoInput');
-            const text = input.value.trim();
-            
-            if (text) {
-                todos.push({
-                    id: Date.now(),
-                    text: text,
-                    completed: false
-                });
-                input.value = '';
-                renderTodos();
-                saveTodos();
-            }
-        }
-
-        function toggleTodo(id) {
-            todos = todos.map(todo => 
-                todo.id === id ? {...todo, completed: !todo.completed} : todo
-            );
-            renderTodos();
-            saveTodos();
-        }
-
-        function deleteTodo(id) {
-            todos = todos.filter(todo => todo.id !== id);
-            renderTodos();
-            saveTodos();
-        }
-
-        function renderTodos() {
-            const list = document.getElementById('todoList');
-            list.innerHTML = '';
-            
-            todos.forEach(todo => {
-                const li = document.createElement('li');
-                li.innerHTML = `
-                    <input type="checkbox" 
-                           ${todo.completed ? 'checked' : ''} 
-                           onchange="toggleTodo(${todo.id})">
-                    <span class="${todo.completed ? 'completed' : ''}">${todo.text}</span>
-                    <button class="delete-btn" onclick="deleteTodo(${todo.id})">Delete</button>
-                `;
-                list.appendChild(li);
-            });
-        }
-
-        function saveTodos() {
-            localStorage.setItem('todos', JSON.stringify(todos));
-        }
-
-        function loadTodos() {
-            const saved = localStorage.getItem('todos');
-            if (saved) {
-                todos = JSON.parse(saved);
-                renderTodos();
-            }
-        }
-
-        // Add todo when Enter key is pressed
-        document.getElementById('todoInput').addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                addTodo();
-            }
-        });
-
-        // Load todos when page loads
-        loadTodos();
-    </script>
+    </header>
+    <main class="container">
+        <!-- We'll add more content here as we build the portfolio -->
+    </main>
 </body>
 </html>
