@@ -1,250 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title></title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://use.fontawesome.com/cdc49cdcaa.js"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="main.css">
+    <title>Todo List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .input-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button {
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            background-color: #f9f9f9;
+            margin-bottom: 8px;
+            border-radius: 4px;
+        }
+        li span {
+            flex: 1;
+        }
+        .delete-btn {
+            background-color: #ff4444;
+            margin-left: 10px;
+        }
+        .delete-btn:hover {
+            background-color: #cc0000;
+        }
+        .completed {
+            text-decoration: line-through;
+            color: #888;
+        }
+    </style>
 </head>
-
-
 <body>
-    <section id="frontpage" class = "container-fluid">
-        <div id="page1title" class = "row">
-            <div class="col-sm-12 alignindiv">
-                <div class="alignindiv">
-                    <strong>Hi, I'm Pranjal!</strong>
-                    Aspiring full-stack developer, who is ready for the next challenge!    
-                </div>
-            </div>
+    <div class="container">
+        <h1>Todo List</h1>
+        <div class="input-group">
+            <input type="text" id="todoInput" placeholder="Add a new task...">
+            <button onclick="addTodo()">Add</button>
         </div>
-        <div id="profiles" class="row">
-            <div id="linkedin" class="col-sm-6 alignindiv">
-                <a class="linksblack" href="https://www.linkedin.com/in/pranjalpatelpp/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-            </div>
-            <div id="github" class = "col-sm-6 alignindiv">
-                <a class="linksblack" href="https://github.com/Pranjal1234" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-            </div>  
-        </div>
-        <div id="page1down" class = "row">
-            <div class = "col-sm-12 links">
-                <a href="#aboutpage"><i class="fa fa-caret-square-o-down" aria-hidden="true"></i></a>
-            </div>  
-        </div>
-    </section>
-    <section id="aboutpage" class="container-fluid bioback ">
-        <div id="page2title" class="row">
-            <div class="col-sm-12 alignindiv">
-                <strong>About Me</strong>
-            </div>
-        </div>
-        <div id="aboutme" class="row">
-            <div class="col-sm-6 photo">
-                <div class="alignindiv">
-                    <img id="photome" class="img-responsive img-circle" src="https://goo.gl/b8rM14">
-                </div>
-            </div>
-            <div class="col-sm-6 aboutme">
-                <div id="bio" class="alignindiv">
-                    An engineer at heart who loves to tackle difficult problems with a simple and logical approach. I graduated from Georgia Tech with a BS in Biomedical Engineering in December 2016. Since than I have enrolled in an Udacity Nanodegree Program which focuses on Full-Stack Web Development. I have worked on several projects ranging from topics such as medical devices to database management.
-                </div>
-            </div>
-        </div> 
-        <div id="page2down" class="row">
-            <div class="col-sm-12">
-                <a href="#projectspage"><i class="links fa fa-caret-square-o-down w" aria-hidden="true"></i></a>
-            </div>  
-        </div>
-    </section>
-    <section id="projectspage" class = "container-fluid projectback"> 
-        <div id="page3title" class="row">
-            <div class="col-sm-12 alignindiv">
-                <strong>Projects</strong><br>
-            </div>
-        </div>
-        <div id="projects" class="row">
-            <div class="col-sm-4 projects">
-                 <!-- Trigger/Open The Modal -->
-                <div id="myBtn1">
-                    <div class="project-title-button alignindiv">
-                        <strong>Personal ownCloud</strong>
-                    </div>
-                    <div>
-                        <img class="img-responsive project-picture-button" src="owncloud.png">
-                    </div>
-                </div>
+        <ul id="todoList"></ul>
+    </div>
 
-                <!-- The Modal -->
-                <div id="myModal1" class="modal">
-                  <!-- Modal content -->
-                  <div class="modal-content">
-                    <span id="close1" class="close">&times;</span>
-                        <div class="project-title-modal alignindiv">
-                            <strong>Personal ownCloud</strong>
-                        </div>
-                        <div>
-                            <a href="http://76.97.97.15/owncloud/" target="_blank">
-                            <img class="img-responsive project-picture" src="owncloud.png"></a>
-                        </div>
-                        <div class="project-description alignindiv">
-                            <strong>Description:</strong> Cloud-service to store files and photos, similar to Google Drive, Dropbox, etc. Click <a href="http://76.97.97.15/owncloud/" target="_blank">here</a> or image to view the project.<br><br><strong> Log in for my resume.</strong><br> username: recruiter <br> password: pickme
-                        </div>
-                        <div class="project-technology-list">
-                            <strong>Technologies Used:</strong> ownCloud, apache2, postgreSQL, HTTP, Linux(Ubuntu 17.04 Server)
-                        </div>   
-                  </div>
-                </div>
-            </div>
+    <script>
+        let todos = [];
 
-            <div class="col-sm-4 projects">
-                <!-- Trigger/Open The Modal -->
-                <div id="myBtn2">
-                    <div class="project-title-button alignindiv">
-                        <strong>Neighborhood-Map</strong>
-                    </div>
-                    <div>
-                        <img class="img-responsive project-picture-button" src="maps.png">
-                    </div>  
-                </div>
+        function addTodo() {
+            const input = document.getElementById('todoInput');
+            const text = input.value.trim();
+            
+            if (text) {
+                todos.push({
+                    id: Date.now(),
+                    text: text,
+                    completed: false
+                });
+                input.value = '';
+                renderTodos();
+                saveTodos();
+            }
+        }
 
-                <!-- The Modal -->
-                <div id="myModal2" class="modal">
-                  <!-- Modal content -->
-                  <div class="modal-content">
-                    <span id="close2" class="close">&times;</span>
-                    <div class="project-title-modal alignindiv">
-                        <strong>Neighborhood-Map</strong>
-                    </div>
-                    <div>
-                        <a href="http://76.97.97.15/neighborhood-maps/" target="_blank">
-                        <img class="img-responsive project-picture" src="maps.png"></a>
-                    </div>
+        function toggleTodo(id) {
+            todos = todos.map(todo => 
+                todo.id === id ? {...todo, completed: !todo.completed} : todo
+            );
+            renderTodos();
+            saveTodos();
+        }
 
-                    <span class="close">&times;</span>   
-                    <div class="project-description alignindiv">
-                        <strong>Description:</strong> An interactive map of places to live in New York. Each marker gives a list of coffee shops within 100m of the location. You can narrow down the list by searching it on the left side. Click <a href="http://76.97.97.15/neighborhood-maps/" target="_blank"> here</a> or the image to see the web app. <br><br>
-                        <strong>Source Code:</strong>
-                        <a href="https://github.com/Pranjal1234/neighborhood-maps" target="_blank">GitHub</a>
-                    </div> 
-                    <div class="project-technology-list">
-                        <strong>Technologies Used:</strong> Google Maps API, FourSquare API, JavaScript, Knockout Framework, AJAX, apache2, HTTP, Linux(Ubuntu 17.04 Server)
-                    </div>
-                  </div>
-                </div>
-            </div>
+        function deleteTodo(id) {
+            todos = todos.filter(todo => todo.id !== id);
+            renderTodos();
+            saveTodos();
+        }
 
-            <div class="col-sm-4 projects">
-                <!-- Trigger/Open The Modal -->
-                <div id="myBtn3">
-                    <div class="project-title-button alignindiv">
-                        <strong>Catalog Web App</strong>
-                    </div>
-                    <div>
-                        <img class="img-responsive project-picture-button" src="catalog.png">
-                    </div> 
-                </div>
+        function renderTodos() {
+            const list = document.getElementById('todoList');
+            list.innerHTML = '';
+            
+            todos.forEach(todo => {
+                const li = document.createElement('li');
+                li.innerHTML = `
+                    <input type="checkbox" 
+                           ${todo.completed ? 'checked' : ''} 
+                           onchange="toggleTodo(${todo.id})">
+                    <span class="${todo.completed ? 'completed' : ''}">${todo.text}</span>
+                    <button class="delete-btn" onclick="deleteTodo(${todo.id})">Delete</button>
+                `;
+                list.appendChild(li);
+            });
+        }
 
-                <!-- The Modal -->
-                <div id="myModal3" class="modal">
-                  <!-- Modal content -->
-                  <div class="modal-content">
-                    <span id="close3" class="close">&times;</span>
-                    <div class="project-title-modal alignindiv">
-                        <strong>Catalog Web App</strong>
-                    </div>
-                    <div>
-                        <a href="http://76.97.97.15/catalog/" target="_blank">
-                        <img class="img-responsive project-picture" src="catalog.png"></a>
-                    </div> 
-                    <div class="project-description alignindiv">
-                        <strong>Description:</strong> Catalog app that keeps track of items put onto the site. You can make an account and add an item to the Catalog. Click <a href="http://76.97.97.15/catalog/" target="_blank"> here</a> or the image to see the catalog and add your own item. <br><br>
-                        <strong>Source Code:</strong> 
-                        <a href="https://github.com/Pranjal1234/catalog" target="_blank">GitHub</a>
-                    </div>
-                    <div class="project-technology-list">
-                        <strong>Technologies Used:</strong>  Python, Flask Framework, SQLite, SQLAlchemy, OAuth2.0, apache2, mod_wsgi, HTTP, Linux(Ubuntu 17.04)
-                    </div>
-                  </div>
-                </div>   
-            </div>
+        function saveTodos() {
+            localStorage.setItem('todos', JSON.stringify(todos));
+        }
 
-        </div>
-        <div id="page3down" class="row">
-            <div class="col-sm-12">
-                <a href="#contactpage"><i class="links fa fa-caret-square-o-down" aria-hidden="true"></i></a>
-            </div>
-        </div>  
-    </section>
-    <section id="contactpage" class = "container-fluid"> 
-        <div class="row">
-            <div id="page4title" class="col-sm-12 alignindiv">
-                <strong>Contact Me</strong>
-            </div>
-        </div>
-         <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
+        function loadTodos() {
+            const saved = localStorage.getItem('todos');
+            if (saved) {
+                todos = JSON.parse(saved);
+                renderTodos();
+            }
+        }
 
-                    <form id="contact-form" method="post" action="https://www.enformed.io/g2ydwmvt" target="_blank" role="form">
+        // Add todo when Enter key is pressed
+        document.getElementById('todoInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                addTodo();
+            }
+        });
 
-                        <div class="controls">
-
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label for="form_name">Firstname *</label>
-                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label for="form_lastname">Lastname *</label>
-                                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label for="form_email">Email *</label>
-                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label for="form_phone">Phone</label>
-                                        <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <label for="form_message">Message *</label>
-                                        <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave me a message."></textarea>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12">
-                                    <input type="submit" class="btn btn-success btn-send" value="Send message">
-                                </div>
-                            </div>
-                        </div>
-
-                    </form>
-                </div>
-            </div>
-    </section> 
-    <script type="text/javascript" src="js/modal.js"></script>             
+        // Load todos when page loads
+        loadTodos();
+    </script>
 </body>
 </html>
